@@ -16,7 +16,15 @@ function prime(num) {
 }
 
 function factorial(num) {
-    return -1;
+    if (num < 0) return "The input you entered is not acceptable.";
+    if (num === 0 || num === 1) return 1;
+    if(num>15) return "Please enter a number less than or equal to 15."
+    
+    let result = 1;
+    for (let i = 2; i <= num; i++) {
+        result *= i;
+    }
+    return result;
 }
 
 module.exports={
