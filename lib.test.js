@@ -20,3 +20,19 @@ test("prime(-1) should be false", () => {
 test("prime(15) should be false", () => {
     expect(lib.prime(15)).toBe(false);
 });
+
+test("factorial(16) should be false", () => {
+    expect(lib.factorial(16)).toBe("Please enter a number less than or equal to 15.");
+});
+
+test("factorial(6) should be false", () => {
+    expect(lib.factorial(6)).toBe(720);
+});
+
+test("factorial(0) should be false", () => {
+    expect(lib.factorial(0)).toBe(1);
+});
+
+test("factorial(-1) should be false", () => {
+    expect(lib.factorial(-1)).toBe("The input you entered is not acceptable.");
+});
